@@ -41,22 +41,6 @@ This project implements a **Transformer model from scratch** using PyTorch to pe
 
 ---
 
-## ⚙️ Configuration
-
-Configuration is handled in `config.py`. Key parameters include:
-
-```python
-{
-  "batch_size": 8,
-  "num_epochs": 20,
-  "lr": 1e-4,
-  "seq_len": 350,
-  "d_model": 512,
-  "lang_src": "en",
-  "lang_tgt": "it",
-  ...
-}
-
 📦 Requirements
 Python 3.8+
 PyTorch
