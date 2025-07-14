@@ -25,11 +25,17 @@ This project implements a **Transformer model from scratch** using PyTorch to pe
 
 ## 🧩 Project Structure
 ├── config.py # Project configuration
+
 ├── dataset.py # Custom Dataset class and masking logic
+
 ├── model.py # Transformer model and components
+
 ├── train.py # Training pipeline and validation logic
+
 ├── attention_visualization.ipynb # Attention heatmap visualizer
+
 ├── inference.ipynb # Inference example on test inputs
+
 └── tokenizer_{en,it}.json # Tokenizers (generated after training starts)
 
 
