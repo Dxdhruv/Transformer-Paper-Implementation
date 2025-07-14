@@ -59,3 +59,39 @@ torchmetrics
 tensorboard
 tqdm
 
+pip install -r requirements.txt
+
+🏋️‍♂️ Training
+python train.py
+
+This will:
+Train the Transformer model from scratch
+Save checkpoints to the weights/ directory
+Log training loss and validation metrics to TensorBoard
+
+🔍 Validation
+At the end of each epoch, the model runs greedy decoding and prints:
+Source sentence
+Ground truth translation
+Model-predicted translation
+
+📊 Metrics
+Validation includes:
+BLEU Score: Translation quality
+WER: Word-level error rate
+CER: Character-level error rate
+
+🎨 Attention Visualization
+Explore attention patterns using:
+attention_visualization.ipynb
+
+🤖 Inference
+You can try the model manually via:
+inference.ipynb
+Just load the model checkpoint and provide an English sentence — it’ll generate the Italian translation using greedy decoding.
+
+📌 TODO
+ Add beam search for better decoding quality
+ Export to ONNX or TorchScript for production use
+ UI / API interface for translation
+ CLI support for translating text files
