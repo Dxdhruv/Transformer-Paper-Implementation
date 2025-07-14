@@ -24,4 +24,38 @@ This project implements a **Transformer model from scratch** using PyTorch to pe
 ---
 
 ## 🧩 Project Structure
+├── config.py # Project configuration
+├── dataset.py # Custom Dataset class and masking logic
+├── model.py # Transformer model and components
+├── train.py # Training pipeline and validation logic
+├── attention_visualization.ipynb # Attention heatmap visualizer
+├── inference.ipynb # Inference example on test inputs
+└── tokenizer_{en,it}.json # Tokenizers (generated after training starts)
+
+
+---
+
+## ⚙️ Configuration
+
+Configuration is handled in `config.py`. Key parameters include:
+
+```python
+{
+  "batch_size": 8,
+  "num_epochs": 20,
+  "lr": 1e-4,
+  "seq_len": 350,
+  "d_model": 512,
+  "lang_src": "en",
+  "lang_tgt": "it",
+  ...
+}
+
+📦 Requirements
+Python 3.8+
+PyTorch
+transformers, datasets, tokenizers
+torchmetrics
+tensorboard
+tqdm
 
